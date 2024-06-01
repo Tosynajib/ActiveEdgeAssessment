@@ -22,7 +22,7 @@ public class StockController {
 
         @GetMapping
         public ResponseEntity<Page<StockRequestDto>> getAllStocks(@RequestParam(defaultValue = "0") int pageNo,
-                                                                  @RequestParam(defaultValue = "10") int pageSize) {
+                                                                  @RequestParam(defaultValue = "5") int pageSize) {
             Page<StockRequestDto> stockPage = stockService.getAllStocks(pageNo, pageSize);
             return new ResponseEntity<>(stockPage, HttpStatus.OK);
         }
