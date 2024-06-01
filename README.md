@@ -97,5 +97,5 @@ mvn spring-boot:run
 
 Access the API:
 
-Base URL: http://localhost:8080/api/stocks
+Base URL: http://localhost:8080/api/stock
 
