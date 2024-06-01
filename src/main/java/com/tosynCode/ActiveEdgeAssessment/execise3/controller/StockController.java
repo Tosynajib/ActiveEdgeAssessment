@@ -46,7 +46,4 @@ public class StockController {
             return ResponseEntity.ok( updatedStock );
         }
 
-
-
-
 }
